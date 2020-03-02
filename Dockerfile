@@ -1,4 +1,4 @@
-# https://github.com/echoes-ai/research/blob/development/gpu.Dockerfile
+# https://github.com/tensorflow/tensorflow/blob/master/tensorflow/tools/dockerfiles/dockerfiles/gpu.Dockerfile
 # https://github.com/tensorflow/tensorflow/issues/25939
 # Due to lack of possibility to dynamically choose python version.
 
