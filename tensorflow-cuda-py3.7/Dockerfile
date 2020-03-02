@@ -66,4 +66,6 @@ RUN python3.7 -m pip install pip && \
 # Some TF tools expect a "python" binary
 RUN ln -s $(which python3.7) /usr/local/bin/python
 
-RUN pip install --no-cache-dir tensorflow-gpu==2.0.0
+ARG TF_PACKAGE=tensorflow-gpu
+ARG TF_PACKAGE_VERSION=2.0.0
+RUN pip install --no-cache-dir ${TF_PACKAGE}${TF_PACKAGE_VERSION:+==${TF_PACKAGE_VERSION}}
